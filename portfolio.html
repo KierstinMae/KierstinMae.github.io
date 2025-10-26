@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kierstin Blatzheim | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="navbar" id="mynavbar">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT ME</a>
+      <a href="resume.html">RESUME</a>
+      <a href="portfolio.html" class="active">PORTFOLIO</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Section 1: Title -->
+  <div class="about_me_title">
+    <div class="about_me_text">
+      <h1>PORTFOLIO</h1>
+    </div>
+  </div>
+
+  <!-- Portfolio Section -->
+  <div class="portfolio_cont" style="background-color: var(--alternative)">
+    <div style="max-width: 1800px; margin: 0 auto;">
+      
+      <!-- Filter Buttons -->
+      <div id="myBtnContainer" style="text-align: center; margin-bottom: 20px;">
+        <button class="portbtn portactive" onclick="filterSelection('all')"> Show all</button>
+        <button class="portbtn" onclick="filterSelection('GIS')"> GIS </button>
+        <button class="portbtn" onclick="filterSelection('remotesensing')"> Remote Sensing</button>
+        <button class="portbtn" onclick="filterSelection('webmaps')"> Web Mapping</button>
+        <button class="portbtn" onclick="filterSelection('classes')"> Classes </button>
+        <button class="portbtn" onclick="filterSelection('delaware')"> Delaware </button>
+      </div>
+
+      <!-- Portfolio Grid (one unified .portrow) -->
+      <div class="portrow">
+
+        <div class="portcolumn remotesensing classes">
+          <div class="portcontent">
+            <a href="projects/JPLSeniorPracticum.html" class="port_txt">
+              <img src="images/JPL.jpg" alt="SantaMonicaPier">
+              <h3>Utilizing Sentinel2 Imagery to Measure Water Quality Factors in Los Angeles Waters</h3>
+            </a>
+          </div>
+        </div>
+
+        <div class="portcolumn GIS classes">
+          <div class="portcontent">
+            <a href="projects/SustainabilityActionResearchOutdoorSpaces2021.pdf" class="port_txt">
+              <img src="images/SAR2021.png" alt="UCLA Sustainability Action Research Outdoor Spaces">
+              <h3>Incorporating Edible Landscaping on UCLA's Campus</h3>
+            </a>
+          </div>
+        </div>
+
+        <div class="portcolumn GIS classes delaware">
+          <div class="portcontent">
+            <a href="projects/ImpactofSeaLevelRiseonWells.pdf" class="port_txt">
+              <img src="images/Wells.png" alt="Impact of Sea Level Rise on Private Wells in Sussex County, Delaware">
+              <h3>Impact of Sea Level Rise on Private Wells in Sussex County, Delaware</h3>
+            </a>
+          </div>
+        </div>
+
+        <div class="portcolumn GIS classes delaware">
+          <div class="portcontent">
+            <a href="projects/SussexCountyDevelopmentSeaLevelRise.pdf" class="port_txt">
+              <img src="images/SeaLevelRise.png" alt="Development overlap with projected sea level rise">
+              <h3>Overlap of Development in Sussex County, Delaware With Projected Sea-level Rise</h3>
+            </a>
+          </div>
+        </div>
+
+        <div class="portcolumn GIS webmaps classes">
+          <div class="portcontent">
+            <a href="projects/SNAPParticipation2019.html" class="port_txt">
+              <img src="images/SNAP2019.png" alt="Snap Participation 2019">
+              <h3>SNAP Participation Across the United States</h3>
+            </a>
+          </div>
+        </div>
+
+      </div> <!-- end .portrow -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="top_footer">
+      <p style="font-size: 24px; font-family: 'Montserrat', sans-serif;">Contact Me</p>
+      <a href="https://www.linkedin.com/in/kie-blatz/"><i class="fa fa-linkedin"></i></a>
+      <a href="mailto:kie.blatz@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    </div>
+    <div class="bottom_footer">
+      <p><small>&copy; Kierstin Blatzheim</small></p>
+    </div>
+  </footer>
+
+  <script src="scripts/filter.js"></script>
+  <script src="scripts/icon.js"></script>
+</body>
+</html>
+

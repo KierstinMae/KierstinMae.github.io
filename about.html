@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kierstin Blatzheim | About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="navbar" id="mynavbar">
+        <a href="index.html">HOME</a>
+        <a href="about.html" class="active">ABOUT ME</a>
+        <a href="resume.html">RESUME</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+
+    <!-- About Me Title -->
+    <div class="about_me_title">
+      <div class="about_me_text">
+        <h1>ABOUT ME</h1>
+      </div>
+    </div>
+
+    <!-- Section 1: About Me -->
+    <section class="about_me" style="background-color: var(--background);">
+      <div style="max-width: 1800px; margin: 0 auto;">
+        <div class="grid_background_col2 about_me_center">
+          <!-- Backpacking image resized to 75% -->
+          <img class="me_image" src="images/Backpacking.jpg" alt="Photo of Kierstin Blatzheim backpacking at Crown Lake in California" style="width: 75%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+
+          <section>
+            <h2 class="section-heading">Guiding Principles</h2>
+            <p>As a lifelong student, I am constantly trying to expand my understanding of people, places, concepts, skills, and anything in between. My motto, “stay curious,” is a humble reminder that there is always more to learn.</p>
+          </section>
+
+          <section>
+            <h2 class="section-heading">Sustainability</h2>
+            <p>Truly sustainable solutions require a balance of the needs for the environment, people, and the economy. When too much emphasis is placed on one area, the other areas must compensate, leading to non-sustainable outcomes in the long run. It is through this balanced lens of sustainability that I approach problem-solving to create lasting solutions both professionally and personally.</p>
+          </section>
+
+          <section>
+            <h2 class="section-heading">Background</h2>
+            <p>I graduated from the University of California, Los Angeles (UCLA) with a B.S. in Environmental Science and specialization in Environmental Engineering. As a scientist, I learned how to collect accurate and meaningful data to identify problems. Engineering pushes me to then design data-driven solutions for those problems. It was through my classes and student research positions that I was introduced to GIS and remote sensing. I fell in love with its possibility as a tool for data collection, analysis, and public education.</p>
+            <p>After graduation, I started working for Chesapeake Utilities as a GIS Specialist. I continue to expand my skills in remote sensing and GIS through ESRI Academy and guide personal learning on Youtube.</p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Academic Areas and Skills -->
+    <section style="background-color: var(--background);">
+      <div style="max-width: 1800px; margin: 0 auto;">
+        <div class="about-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; padding: 60px; align-items: start;">
+          <!-- Left column -->
+          <div class="left-column">
+            <section>
+              <h2 class="section-heading">Academic Areas of Focus</h2>
+              <p>Hydrology | Sustainable Design | Environmental Policy and Regulation | Urban Planning | Geospatial Analysis | Conservation</p>
+            </section>
+
+            <section>
+              <h2 class="section-heading">Areas of Interest</h2>
+              <p>Geospatial Analysis | Remote Sensing | Land Use Change | Sustainable Tourism | Sustainable Development | Waste Streams</p>
+            </section>
+
+            <section>
+              <h2 class="section-heading">Skills</h2>
+              <p>ArcGIS | QGIS | Google Earth Engine | R</p>
+            </section>
+          </div>
+
+          <!-- Right column: sidebar with new background -->
+          <aside class="sidebar" style="background-color: color-mix(in srgb, var(--header-bg) 30%, white 70%);">
+            <h2 class="section-heading">What am I currently up to?</h2>
+            <ul>
+              <li>I recently finished an ESRI MOOC called <i>Spatial Data Science: The New Frontier in Analytics</i> and started <i>The ArcGIS Imagery MOOC: Foundations and Frontiers</i>.</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Featured -->
+    <section style="background-color: var(--accent);">
+      <div style="max-width: 1800px; margin: 0 auto;">
+        <div class="grid_background_col2">
+          <div class="grid_title_txt"><h1>FEATURED</h1></div>
+          <p style="padding-right: 2.5%; padding-left:2.5%;"><i>Publications</i></p>
+          <div class="homepage_sect2_cont">
+            <ul>
+              <li>
+                <a class="featured" href="https://doi.org/10.3390/rs17020201" target="_blank">
+                  <p>Monitoring Coastal Water Turbidity Using Sentinel-2—A Case Study in Los Angeles</p>
+                  <b>Remote Sensing Journal, January 2025</b>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="top_footer">
+        <p style="font-size: 24px; font-family: 'Montserrat', sans-serif;">Contact Me</p>
+        <a href="https://www.linkedin.com/in/kie-blatz/"><i class="fa fa-linkedin"></i></a>
+        <a href="mailto:kie.blatz@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      </div>
+      <div class="bottom_footer">
+        <p><small>&copy; Kierstin Blatzheim</small></p>
+      </div>
+    </footer>
+
+    <script src="scripts/icon.js"></script>
+  </body>
+</html>
