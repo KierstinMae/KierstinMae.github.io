@@ -67,6 +67,10 @@ nav {
 }
 
 /* ------------------------ Buttons ------------------------ */
+.button-container {
+   display: flex;
+   gap: 15px;
+
 .button_blk {
   border: 2px solid var(--text);
   border-radius: 10rem;
