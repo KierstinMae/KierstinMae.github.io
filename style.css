@@ -105,6 +105,13 @@ img {
   align-items: center;
 }
 
+/* Reduce space between sections inside the About Me area */
+.about_me section {
+  margin-bottom: 1.5rem; /* smaller gap between sections */
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 /* ------------------------ Sidebar ------------------------ */
 
 .sidebar {
